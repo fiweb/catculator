@@ -1,2 +1,1 @@
-# catculator
-Proportion calculator
+# propncalculator
