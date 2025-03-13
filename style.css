@@ -147,6 +147,7 @@ input[type="text"].calculated {
   font-weight: 900; /* Very heavy weight */
   border: 3px solid #789b01;
   border-radius: 10px;
+  font-size: 1.1rem;
 }
 
 .equal {
