@@ -57,8 +57,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 75vh;
-  padding-top: 5vh;
+  /* Changed from vh to svh to prevent iOS keyboard layout jumps */
+  min-height: 75svh;
+  padding-top: 5svh;
   background-color: var(--background);
   color: var(--foreground);
   margin: 0;
@@ -127,6 +128,9 @@ label {
 input[type="text"] {
   -webkit-appearance: none; /* Prevents iOS native styling conflicts */
   appearance: none;         /* Standard property */
+  touch-action: manipulation; /* Removes 300ms tap delay */
+  -webkit-user-select: text;  /* Forces text focus behavior */
+  -webkit-tap-highlight-color: transparent; /* Removes iOS grey tap flash */
   width: 100%;
   padding: 8px;
   border: 2px solid var(--border);
@@ -292,4 +296,4 @@ button#reset {
   .calculator-toggle {
     display: none;
   }
-}8907
+}
