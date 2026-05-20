@@ -128,7 +128,7 @@ label {
 input[type="text"] {
   -webkit-appearance: none; /* Prevents iOS native styling conflicts */
   appearance: none;         /* Standard property */
-  touch-action: manipulation; /* Removes 300ms tap delay */
+   /* touch-action: manipulation; - Removes 300ms tap delay */
   -webkit-user-select: text;  /* Forces text focus behavior */
   -webkit-tap-highlight-color: transparent; /* Removes iOS grey tap flash */
   width: 100%;
