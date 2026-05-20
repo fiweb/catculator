@@ -91,22 +91,26 @@ body {
 .container::after {
   content: "";
   position: absolute;
-  top: -15px;
-  width: 30px;
-  height: 30px;
+  top: -18px; /* Pushed up slightly so the pointed tips show clearly */
+  width: 35px; /* Slightly wider base for standard cat anatomy */
+  height: 35px;
   background-color: var(--primary);
-  border-radius: 50% 50% 0 0;
   z-index: -1;
+  transition: background-color 0.3s ease; /* Keeps theme toggling smooth */
 }
 
+/* Left Ear: Top-left corner remains sharp (0%), others are rounded */
 .container::before {
-  left: 20px;
-  transform: rotate(-30deg);
+  left: 18px;
+  border-radius: 100% 20% 0 0;
+  transform: rotate(-35deg); /* Adjusted tilt so the sharp point aims up */
 }
 
+/* Right Ear: Top-right corner remains sharp (0%), others are rounded */
 .container::after {
-  right: 20px;
-  transform: rotate(30deg);
+  right: 18px;
+  border-radius: 20% 100% 0 0;;
+  transform: rotate(35deg); /* Mirrored tilt for the right side */
 }
 
 .proportion-container {
