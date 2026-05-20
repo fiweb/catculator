@@ -239,7 +239,7 @@ button#reset {
   position: relative; /* Changed from absolute */
 }
 
-/* Add a cat-tail cursor ONLY for hover-capable devices (mice/trackpads) */
+/* Add a cat-tail cursor ONLY for hover-capable devices (mice/trackpads) 
 @media (hover: hover) and (pointer: fine) {
   body,
   button,
@@ -248,7 +248,7 @@ button#reset {
         0 0,
       auto;
   }
-}
+} */
 
 .cat-icon-container {
   position: relative;
